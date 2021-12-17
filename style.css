@@ -2,6 +2,7 @@ body{
     padding: 0px;
     margin:0px;
     box-sizing: border-box;
+    background-color: #f2f2f2;
 }
 .header-container{
     background-image:url(assets/bg-img.jpg);
@@ -34,6 +35,7 @@ body{
     display: flex;
     padding: 0px 10px;
     height: 30px;
+    background-color: rgb(255, 255, 255);
 }
 .perfil-img img{
     position:absolute;
@@ -41,7 +43,7 @@ body{
     width: 90px;
     height: 90px;
     border-radius: 21px;
-    border: 3px solid #9191918c;
+    border: 4px solid #5454548c;
 }
 .perfil-img h1{
     position:absolute;
@@ -55,6 +57,7 @@ section.scrollmenu {
     background-color: rgb(255, 255, 255);
     overflow: auto;
     white-space: nowrap;
+    box-shadow: 0px 5px 5px #888888;
 }
 section.scrollmenu a {
     font-family: 'Jost', sans-serif;
@@ -68,4 +71,38 @@ section.scrollmenu a {
 
 section.scrollmenu a:hover {
     background-color: #777;
+}
+.menu-items{
+    
+}
+.menu-items h2{
+    margin-left: 20px;
+    font-family: 'Jost', sans-serif;
+    color: #777;
+
+}
+.items{
+    background-color: #fff;
+    border-bottom: 1px solid #b2b2b2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.items img{
+    width: 140px;
+    height: 110px;
+    border-radius: 20px;
+}
+.item-description{
+    font-family: 'Jost', sans-serif;
+    padding: 20px;
+    
+}
+.item-description h3 , p {
+    margin: 0px;
+}
+.price{
+    color: #777;
+    font-size: 1.3rem;
 }
