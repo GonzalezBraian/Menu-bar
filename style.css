@@ -106,3 +106,23 @@ section.scrollmenu a:hover {
     color: #777;
     font-size: 1.3rem;
 }
+@media all and (min-width: 600px){
+    .container-items{
+        display: flex;
+        justify-content:center;
+        flex-wrap: wrap;
+        
+    }
+    
+    .items{
+        margin: 20px;
+        padding: 20px;
+        border-radius: 20px;
+        
+    }
+}
+@media all and (min-width: 1024px){
+    .items{
+        width: 40%;
+    }
+}
