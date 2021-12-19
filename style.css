@@ -1,9 +1,11 @@
+html{
+    scroll-behavior: smooth;
+}
 body{
     padding: 0px;
     margin:0px;
     box-sizing: border-box;
     background-color: #f2f2f2;
-    
 }
 .header-container{
     background-image:url(assets/bg-img.jpg);
@@ -31,10 +33,10 @@ body{
 }
 .icon-nav  i:hover{
     color: orange;
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+    transition: all 0.3s ease;
 }
-
-
-
 .modal_container{
     display: none;
     background-color: rgba(0, 0, 0, 0.5);
@@ -47,7 +49,6 @@ body{
     height: 100vh;
     width: 100vw;
 }
-
 .map{
     margin-top: 20px;
     width: 240px;
@@ -58,6 +59,7 @@ body{
     display: flex;
 }
 .modal{
+    position: relative;
     font-family: 'Jost', sans-serif;
     background-color: #fff;
     width: 50%;
@@ -71,6 +73,18 @@ body{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     text-align: center;
 }
+.closeButtom{
+    position: absolute;
+    top:30;
+    right: 20;
+    background-color: transparent;
+    border: 0ch;
+
+}
+.closeButtom i{
+    color: green;
+    font-size: 2rem;
+}
 .modal h1{
     margin: 0px;
 }
@@ -79,7 +93,9 @@ body{
     opacity: .7;
     font-size: 1rem;
 }
-
+.dias{
+    line-height: 40px;
+}
 .redes i{
     color: #000;
     font-size: 3rem;
@@ -95,8 +111,6 @@ body{
 #twitter:hover{
     color:lightblue;
 }
-
-
 .perfil-img{
     position:relative;
     display: flex;
@@ -119,7 +133,6 @@ body{
     color: rgba(12, 12, 12, 0.644);
     font-family: 'Jost', sans-serif;
 }
-
 section.scrollmenu {
     background-color: rgb(255, 255, 255);
     overflow: auto;
@@ -135,7 +148,6 @@ section.scrollmenu a {
     padding: 14px;
     text-decoration: none;
 }
-
 section.scrollmenu a:hover {
     background-color: #777;
 }
@@ -144,7 +156,6 @@ section.scrollmenu a:hover {
     color: #777;
     padding-top:20px;
     margin-left: 30px;
-
 }
 .items{
     background-color: #fff;
@@ -166,7 +177,6 @@ section.scrollmenu a:hover {
 }
 .item-description h3 , p {
     margin: 0px;
-
 }
 .price{
     color: #2b2b2b;
@@ -174,7 +184,7 @@ section.scrollmenu a:hover {
 }
 .arrow{
     position: fixed;
-    right: 30;
+    right: 25;
     bottom: 60;
     background-color: green;
     border-radius: 50%;
@@ -187,7 +197,11 @@ section.scrollmenu a:hover {
 }
 .arrow:hover{
     background-color: orange;
+    -webkit-transform: scale(1.2);
+	transform: scale(1.2);
+    transition: all 0.3s ease;
 }
+
 .footer{
     width: 100%;
     height: 40px;
@@ -205,28 +219,39 @@ section.scrollmenu a:hover {
         display: flex;
         justify-content:center;
         flex-wrap: wrap;
-        
     }
     .menu-items h2{
         text-align: center;
         margin: 10px 0px;
     }
+    .perfil-img h1{
+        color: rgba(0, 0, 0, 0.74);
+        
+    }
+    .closeButtom{
+        top:25;
+        right: 30;
+    }
     .items{
         margin: 20px;
         padding: 20px;
         border-radius: 20px;
-        
     }
-
 }
-
 @media all and (min-width: 1024px){
     .items{
         width: 40%;
     }
+    .closeButtom{
+        top:25;
+        right: 50;
+    }
     section.scrollmenu {
         display: flex;
         justify-content: center;
+    }
+    .arrow{
+        bottom: 40;
     }
     .footer{
         height: 20px;
