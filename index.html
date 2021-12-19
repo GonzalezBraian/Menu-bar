@@ -7,15 +7,69 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
 </head>
 <body>
     <header class="header-container">
         <nav class="icon-nav">
             <div class="icons">
-                <a href=""><i class="fa-solid fa-location-dot"></i></a>
-                <a href=""><i class="fa-solid fa-clockgit "></i></a>
-                <a href=""><i class="fa-solid fa-phone"></i></a>
-                <a href=""><i class="fa-solid fa-share-nodes"></i></a>
+                <i id="openL" class="fa-solid fa-location-dot"></i>
+                <i id="openH" class="fa-solid fa-clock"></i>
+                <i id="openC" class="fa-solid fa-phone"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+                <!-- popup -->
+                <div class="modal_container" id="encontranos">
+                    <div class="modal">
+                        <h1>ENCONTRANOS EN:</h1>
+                        <div class="map-container">
+                            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d756.3220538888957!2d-74.04546902552303!3d40.68964964554957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250892eab02a9%3A0xb1caf38358cd0ed3!2sLiberty%20Island%2C%20Brooklyn%2C%20Nueva%20York%2011231%2C%20EE.%20UU.!5e0!3m2!1ses!2sar!4v1639864884747!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>                            
+                        <p>Av. Sprinfield entre Calle Falsa 123 y Calle verdadera 321</p>
+                        <button id="closeL">
+                            VOLVER
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="modal_container" id="horarios">
+                    <div class="modal">
+                        <h1>NUESTROS HORARIOS</h1>
+                        
+                        <p>
+                            - Lun    8:00AM - 20:00PM<br>
+                            - MAR    8:00AM - 20:00PM<br>
+                            - MIE    8:00AM - 20:00PM<br>
+                            - JUE    8:00AM - 20:00PM<br>
+                            - VIE    8:00AM - 20:00PM<br>
+                            - SAB    8:00AM - 13:00PM<br>
+                            - DOM    CERRADO<br>
+                            
+                        </p>
+                        <button id="closeH">
+                            VOLVER
+                        </button>
+                    </div>
+                </div>
+
+                <div class="modal_container" id="contacto">
+                    <div class="modal">
+                        <h1>CONTACTO</h1>
+                        <h3>TEL:123-456789</h3>
+                        <h3>TuBar@gmail.com</h3>
+                        <h2>Seguinso en nuestras redes</h2>
+                        <div class="redes">
+                            <a href="https://www.facebook.com/"><i id="facebook" class="fa-brands fa-facebook-square"></i></a>
+                            <a href="https://www.instagram.com/"><i id="instagram" class="fa-brands fa-instagram-square"></i></a>
+                            <a href="https://www.twitter.com/"><i id="twitter" class="fa-brands fa-twitter-square"></i></a>
+                        </div>
+                        <button id="closeC">
+                            VOLVER
+                        </button>
+                    </div>
+                </div>
+
+                
+                
             </div>
         </nav>
         
@@ -26,6 +80,7 @@
     </div>
 
     <section  class="scrollmenu">
+        <nav class="menus">
             <a href="#CAFETERÍA">CAFETERIA</a>
             <a href="#CAFES">CAFES</a>
             <a href="#contact">BEBIDAS</a>
@@ -34,6 +89,7 @@
             <a href="#news">ENSALADAS</a>
             <a href="#contact">VEGGIE</a>
             <a href="#about">SIN TACC</a>
+        </nav>
     </section>
 
     <section class="menu-items">
@@ -165,5 +221,6 @@
             </article>
         </div>   
     </section>
+    <script src="script.js"></script>
 </body>
 </html>
