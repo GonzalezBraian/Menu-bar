@@ -3,6 +3,7 @@ body{
     margin:0px;
     box-sizing: border-box;
     background-color: #f2f2f2;
+    
 }
 .header-container{
     background-image:url(assets/bg-img.jpg);
@@ -96,19 +97,6 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .perfil-img{
     position:relative;
     display: flex;
@@ -151,13 +139,11 @@ section.scrollmenu a {
 section.scrollmenu a:hover {
     background-color: #777;
 }
-.menu-items{
-    
-}
 .menu-items h2{
-    margin-left: 20px;
     font-family: 'Jost', sans-serif;
     color: #777;
+    padding-top:20px;
+    margin-left: 30px;
 
 }
 .items{
@@ -180,12 +166,40 @@ section.scrollmenu a:hover {
 }
 .item-description h3 , p {
     margin: 0px;
-    line-height: 2.5;
+
 }
 .price{
-    color: #777;
+    color: #2b2b2b;
     font-size: 1.3rem;
 }
+.arrow{
+    position: fixed;
+    right: 30;
+    bottom: 60;
+    background-color: green;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    z-index: 4000;
+    border: 0ch;
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+.arrow:hover{
+    background-color: orange;
+}
+.footer{
+    width: 100%;
+    height: 40px;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding: 20px 0px;
+    margin-top: 20px;
+}
+
 @media all and (min-width: 600px){
     .container-items{
         display: flex;
@@ -193,14 +207,19 @@ section.scrollmenu a:hover {
         flex-wrap: wrap;
         
     }
-    
+    .menu-items h2{
+        text-align: center;
+        margin: 10px 0px;
+    }
     .items{
         margin: 20px;
         padding: 20px;
         border-radius: 20px;
         
     }
+
 }
+
 @media all and (min-width: 1024px){
     .items{
         width: 40%;
@@ -208,5 +227,8 @@ section.scrollmenu a:hover {
     section.scrollmenu {
         display: flex;
         justify-content: center;
+    }
+    .footer{
+        height: 20px;
     }
 }
